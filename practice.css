@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+    background-color: rgb(193, 235, 236);
+}
+
+body {
+    background-color:  rgb(193, 235, 236) ;
+}
+
+.logo {
+    margin-left: 18%;
+    margin-right: 10%;
+    position: absolute;
+    top: 15%;
+}
+
+
+.nav {
+    font-size: 18px;
+    padding: 0px;  
+    padding-left: 58%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 40px;
+    color: grey;
+    position: absolute;
+    top: 20px;
+}
+
+
+.nav::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fcfcfc;
+    position: absolute;
+    left:980px;
+    bottom: -6px;
+    transition:0.5s;
+}
+
+.nav:hover::after {
+    width: 50px;
+}
+
+.h1 {
+    padding: 40px,;
+    font-size: 40px;
+    color: #fbf8f3;  
+    background: linear-gradient(to left,rgb(193, 235, 236),#429be4,#2d58c4,#1624c3,#2d01de,#1624c3,#2d58c4,#429be4,rgb(193, 235, 236));
+    text-align: center;
+}
+
+
+
+.develop {
+    position: absolute;
+    left: 100px;
+    bottom: -150px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    color: chocolate;
+}
+
+.benefit {
+    position: absolute;
+    left : 125px;
+    top: 910px;
+    font-weight: 800;
+    font-size: 25px;
+    color: #2d01de;
+}
+
+.b1 {
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    font-size: 45px;
+}
+
+.search {
+    width:40%;
+    min-height: 20vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 60px;
+    top: 830px;
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(76, 184, 219, 0.31);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    backdrop-filter: blur(4px) saturate(180%    );
+}
+
+.searchbar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchbar button img{
+    width: 46px;
+    border-radius: 42%;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+  
+}
+
+.searchbar button {
+    border: 0;
+    border-radius: 40%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(76, 184, 219, 0.31);
+    cursor: pointer;
+   
+
+}
+
+
+
+
+
+.sidebar {
+    position: fixed;
+    left: -320px;
+    width: 320px;
+    height:60%;
+    background: #0c0c0c;
+    transition: all .5s ease;
+    z-index: 1;
+  }
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+    /* z-index: 111; */
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+    z-index: 1111;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn{
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    position: absolute;
+    top: 16%;
+  }
+  label #cancel{
+    z-index: 111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left: 250px;
+  }
+  #check:checked ~ section{
+    margin-left: 250px;
+  }
+  section{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  }
+
+
+
+  .form {
+    width: 200px;
+    margin: 100px auto 0px auto;
+    position: absolute;
+    left: 80px;
+    top: 890px;
+    padding: 20px;
+    font-weight: 600;
+    color: crimson;
+    font-family: cursive;
+    font-size: 35px;
+    border: 2px solid rgb(247, 66, 102);
+    border-radius: 50%;
+  
+  }
+
+
+  form#h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+
+  }
+
+  div.register {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    columns: #fff;
+  }
+
+  form#register {
+    margin: 40px;
+  }
+
+  label {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  input#name {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#name {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}  
+input#childname {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#mob {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+  input#email {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#city {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+
+input#submit {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(250,100,0,0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    
+}
+
+
+label,span,h2{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/* 
+<div class="latest-offer"> LATEST OFFER</div>
+<div class="reward-points"> COLLECT REWARD POINTS</div>
+<div class="rating"> CUSTOMER RATING</div>
+<div class="membership" */
+
+.latest-offer {
+    position: absolute;
+    left: 70px;
+    top: 1120px;
+    font-family: cursive;
+    font-size: 30px;
+    color: darkorchid;
+}
+
+.reward-points {
+    position: absolute;
+    left: 70px;
+    top: 1200px;
+    font-family: cursive;
+    font-size: 30px;
+    color: darkorchid;
+}
+
+.rating {
+    position: absolute;
+    left: 70px;
+    top: 1280px;
+    font-family: cursive;
+    font-size: 30px;
+    color: darkorchid;
+}
+.membership {
+    position: absolute;
+    left: 70px;
+    top: 1370px;
+    font-family: cursive;
+    font-size: 30px;
+    color: darkorchid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 40px 0px;
+    background-color: #fff;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #4b4c4d;
+}
+
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 2px solid #ccc;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
